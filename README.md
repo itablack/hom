@@ -1,3 +1,4 @@
+DIFFERENCE BETWEEN LET, CONST, AND VAR
 In JavaScript, a variable can be declared using var, let, const keywords.
 
  1: Var keyword; is used to declare variables since JavaScript was created. It is confusing and error-prone when using variables declared using var.
@@ -29,6 +30,13 @@ var num = 200; //Ok
 
 
 3: Const keyword; is used to declare a constant variable that cannot be changed once assigned a value.
+The const declaration is very similar to let:
+const declarations are scoped to blocks as well as functions.
+const declarations can only be accessed after the place of declaration is reached (see temporal dead zone). For this reason, const declarations are commonly regarded as non-hoisted.
+const declarations do not create properties on globalThis when declared at the top level of a script.
+const declarations cannot be redeclared by any other declaration in the same scope.
+const begins declarations, not statements. That means you cannot use a lone const declaration as the body of a block (which makes sense, since there's no way to access the variable).
+
 
 
 Here, we will use the let keyword to declare variables. To declare a variable, write the keyword let followed by the name of the variable you want to give, as shown below.
